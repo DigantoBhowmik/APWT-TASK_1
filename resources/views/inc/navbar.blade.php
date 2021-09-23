@@ -10,16 +10,16 @@
           <a class="{{'/' == request()->path() ? 'nav-link active' : 'nav-link'}}" aria-current="page" href="{{route('home')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="{{'/products' == request()->path() ? 'nav-link active' : 'nav-link'}}" href="{{route('products')}}">Products</a>
+          <a class="{{'products' == request()->path() ? 'nav-link active' : 'nav-link'}}" href="{{route('products')}}">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('team')}}">Our Teams</a>
+          <a class="{{'team' == request()->path() ? 'nav-link active' : 'nav-link'}}" href="{{route('team')}}">Our Teams</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('about')}}">About Us</a>
+          <a class="{{'about' == request()->path() ? 'nav-link active' : 'nav-link'}}" href="{{route('about')}}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
+          <a class="{{'contact' == request()->path() ? 'nav-link active' : 'nav-link'}}" href="{{route('contact')}}">Contact Us</a>
         </li>
       </ul>
     </div>
