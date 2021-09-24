@@ -1,4 +1,9 @@
 @extends('layouts.app')
 @section('contain')
-    <h1>This is products</h1>
+    <?php
+        foreach ($data as $item) {
+            echo $item;
+            echo "<br>";
+        };
+    ?>
 @endsection

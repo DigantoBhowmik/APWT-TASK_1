@@ -12,7 +12,11 @@ class pageController extends Controller
     }
     public function products()
     {
-        return view('pages.products');
+        $product=[
+            "name"=>"Iphone 11",
+            "price"=>"$499"
+        ];
+        return view('pages.products')->with('data',$product);
     }
     public function team()
     {
@@ -26,5 +30,6 @@ class pageController extends Controller
     {
         return view('pages.contact');
     }
+    
     
 }
